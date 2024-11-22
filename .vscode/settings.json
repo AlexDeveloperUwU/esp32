@@ -1,0 +1,6 @@
+{
+    "conventionalCommits.scopes": [
+        "espled-webserver",
+        "drivers"
+    ]
+}
