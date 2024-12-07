@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Control LED con ESP32</title>
+  <style>
+    :root {
+      --highlight-border-radius: 7px;
+      --border-radius: 11px;
+      --yellow-highlight: #fffab7;
+      --links: #0f6dff;
+      --background-body: #fff;
+      --background-main: #f1f1f1;
+      --background-inputs: #fcfcfc;
+      --text: #1c1d1e;
+      --border: #dddddd;
+      --focus-highlight: #b8b8b8;
+      --shadow-color: #545454;
+      --btn-green: #4caf50;
+      --btn-red: #f44336;
+      --btn-green-hover: #45a049;
+      --btn-red-hover: #e53935
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body,
+    html {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-body);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0 20px
+    }
+
+    .container {
+      background-color: var(--background-main);
+      border-radius: var(--border-radius);
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, .1)
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 15px
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 20px
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: var(--border-radius);
+      border: none;
+      cursor: pointer;
+      transition: background-color .3s ease
+    }
+
+    .button-on {
+      background-color: var(--btn-green);
+      color: #fff
+    }
+
+    .button-on:hover {
+      background-color: var(--btn-green-hover)
+    }
+
+    .button-off {
+      background-color: var(--btn-red);
+      color: #fff
+    }
+
+    .button-off:hover {
+      background-color: var(--btn-red-hover)
+    }
+
+    a {
+      text-decoration: none
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Controla el LED</h2>
+    <p>Usa los botones a continuación para encender o apagar el LED del ESP32.</p>
+    <div class="button-container">
+      <a href="/on1"><button class="button-on">Encender LED 1</button></a>
+      <a href="/off1"><button class="button-off">Apagar LED 1</button></a>
+    </div>
+    <br>
+    <div class="button-container">
+      <a href="/on2"><button class="button-on">Encender LED 2</button></a>
+      <a href="/off2"><button class="button-off">Apagar LED 2</button></a>
+    </div>
+    <br>
+    <div class="button-container">
+      <a href="/on3"><button class="button-on">Encender LED 3</button></a>
+      <a href="/off3"><button class="button-off">Apagar LED 3</button></a>
+    </div>
+    <br>
+    <div class="button-container">
+      <a href="/on4"><button class="button-on">Encender LED 4</button></a>
+      <a href="/off4"><button class="button-off">Apagar LED 4</button></a>
+    </div>
+    <br>
+    <div class="button-container">
+      <a href="/on5"><button class="button-on">Encender LED 5</button></a>
+      <a href="/off5"><button class="button-off">Apagar LED 5</button></a>
+    </div>
+    <br>
+    <div class="button-container">
+      <a href="/on6"><button class="button-on">Encender LED 6</button></a>
+      <a href="/off6"><button class="button-off">Apagar LED 6</button></a>
+    </div>
+  </div>
+</body>
+
+</html>
